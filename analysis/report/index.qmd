@@ -1,8 +1,5 @@
 ---
 title: "Prototyping a Shiny App with ChatGPT"
-subtitle: >
-  Using conversational AI to scaffold an
-  interactive data exploration tool
 author: "Ronald 'Ryy' G. Thomas"
 date: "2025-05-15"
 categories: [r, shiny]
@@ -26,7 +23,7 @@ format:
 
 ![A developer workspace with an AI chat interface
 beside a code editor showing Shiny
-code](media/images/hero.jpg){.img-fluid width=80%}
+code](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
 
 *Iterative prototyping with conversational AI
 produces working Shiny applications faster than
