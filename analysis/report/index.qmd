@@ -33,8 +33,8 @@ coding from scratch.*
 
 I did not really know how effective ChatGPT could
 be as a prototyping partner until I sat down with a
-clear goal -- build a modular Shiny app for Palmer
-Penguin data exploration -- and tried to get there
+clear goal (build a modular Shiny app for Palmer
+Penguin data exploration) and tried to get there
 through iterative prompting. Three prompts and
 roughly twenty minutes later, I had a working
 application with boxplots, scatterplots, a
@@ -43,8 +43,8 @@ architecture.
 
 The key insight was not that ChatGPT writes perfect
 code on the first attempt (it does not), but that
-conversational iteration -- starting broad and
-progressively adding specificity -- mirrors how an
+conversational iteration (starting broad and
+progressively adding specificity) mirrors how an
 experienced developer prototypes. Each prompt built
 on the previous output, refining the application in
 stages rather than attempting to specify everything
@@ -89,9 +89,8 @@ annotation explaining each component.
 4. Evaluate the strengths and limitations of
    AI-assisted prototyping for Shiny development.
 
-I am documenting my learning process here. If you
-spot errors or have better approaches, please let
-me know.
+This learning process is documented here. Errors
+spotted or better approaches are always welcome.
 
 ![](media/images/shiny-logo.png){.img-fluid width=30% fig-align="center"}
 
@@ -101,7 +100,7 @@ start broad, refine progressively.*
 # Prerequisites and Setup
 
 To run the Shiny application produced in this post,
-you will need:
+one will need:
 
 ```{r}
 #| eval: false
@@ -136,7 +135,7 @@ AI-assisted prototyping uses conversational AI tools
 like ChatGPT to generate initial code scaffolds
 that a developer then refines. Unlike traditional
 coding from scratch, the developer acts as a
-director rather than a typist -- specifying what the
+director rather than a typist: specifying what the
 application should do in natural language and then
 evaluating, correcting, and extending the generated
 output.
@@ -145,10 +144,10 @@ Think of it as pair programming with an AI partner
 that has broad but shallow knowledge. The AI
 produces syntactically correct code quickly, but the
 human provides domain expertise, architectural
-judgment, and quality standards. The combination can
-be faster than either approach alone, particularly
-for prototypes where speed matters more than
-perfection.
+judgment, and quality standards. The combination
+tends to be faster than either approach alone,
+particularly for prototypes where speed matters more
+than perfection.
 
 The three-prompt strategy demonstrated here reflects
 a general pattern: (1) establish the foundation,
@@ -163,7 +162,7 @@ generated output rather than starting over.
 The iterative approach used three progressively
 specific prompts:
 
-**Prompt 1 -- Foundation:**
+**Prompt 1: Foundation:**
 
 > "I want to use the Palmer Penguin dataset to
 > create a Shiny app for data exploration."
@@ -172,7 +171,7 @@ This produced a basic application with the dataset
 loaded, missing values removed, and a simple
 plotting interface.
 
-**Prompt 2 -- Primary feature:**
+**Prompt 2: Primary feature:**
 
 > "Update shiny app. Add a dropdown menu to select
 > categorical variables, sex, species or island.
@@ -185,7 +184,7 @@ This added the interactive controls and the boxplot
 visualisation that forms the core of the
 application.
 
-**Prompt 3 -- Secondary feature:**
+**Prompt 3: Secondary feature:**
 
 > "Add a second interactive plot to app.R code to
 > provide scatterplots of 2 selected continuous
@@ -260,8 +259,8 @@ add_tooltip <- function(input_ui, tooltip_text) {
 The `add_tooltip` function modifies a Shiny input
 widget to include a Bootstrap tooltip icon beside
 the label. This is a UI enhancement that ChatGPT
-generated unprompted -- it was not part of any of
-the three prompts.
+generated unprompted (it was not part of any of
+the three prompts).
 
 ## Input Module
 
@@ -546,8 +545,8 @@ without custom CSS.
 1. **Reactive input forwarding is fragile.** The
    pattern of returning `reactive(input)` from the
    inputs module works but creates tight coupling.
-   If you add new inputs, all consuming modules must
-   be aware of the new field names.
+   If new inputs are added, all consuming modules
+   must be aware of the new field names.
 2. **`na.omit(penguins)` drops observations
    aggressively.** The Palmer Penguins dataset has
    missing values in different columns. Dropping all
@@ -675,15 +674,15 @@ to be an effective approach for generating a working
 scaffold quickly. Three iterative prompts produced a
 modular application with boxplots, scatterplots, a
 correlation matrix, Bootstrap tooltips, and a clean
-theme -- all in roughly twenty minutes.
+theme (all in roughly twenty minutes).
 
-What I learnt most from this exercise is that
-AI-assisted prototyping shifts the developer's role
-from typist to director. The value is not in the
-generated code per se but in the speed of iteration.
-Starting broad and refining through conversation
-mirrors the natural prototyping process, compressed
-into a fraction of the usual time.
+What this exercise revealed is that AI-assisted
+prototyping shifts the developer's role from typist
+to director. The value is not in the generated code
+per se but in the speed of iteration. Starting broad
+and refining through conversation mirrors the natural
+prototyping process, compressed into a fraction of
+the usual time.
 
 The generated code is not production-ready. It lacks
 input validation, automated tests, error handling,
@@ -691,24 +690,25 @@ and documentation. But as a starting point for
 further development, it is substantially better than
 a blank file.
 
-Main takeaways:
-
-- Three iterative prompts produced a working,
-  modular Shiny application.
-- ChatGPT generates idiomatic Shiny code including
-  modules and tidy evaluation patterns.
-- The human role is to provide architectural
-  judgment, review for correctness, and add
-  production-quality features.
-- AI-assisted prototyping is a speed multiplier,
-  not a replacement for developer expertise.
+In conclusion, four points merit emphasis. First,
+three iterative prompts were sufficient to produce a
+working, modular Shiny application in under twenty
+minutes. Second, ChatGPT generates idiomatic Shiny
+code including modules and tidy evaluation patterns
+without explicit instruction. Third, the human role
+is to provide architectural judgment, review for
+correctness, and add production-quality features
+that the AI systematically omits. Fourth,
+AI-assisted prototyping functions as a speed
+multiplier, not a replacement for developer
+expertise.
 
 # See Also
 
 **Related posts:**
 
 - [Combining Observable JS and Shiny](
-  ../34-shinyvsobservable/) --
+  ../34-shinyvsobservable/):
   Mixing client-side and server-side reactivity
   in Quarto
 
@@ -716,18 +716,18 @@ Main takeaways:
 
 - [Shiny Modules](
   https://shiny.posit.co/r/articles/improve/modules/
-  ) -- Official guide to Shiny module architecture
+  ): Official guide to Shiny module architecture
 - [Mastering Shiny (Wickham)](
-  https://mastering-shiny.org/) --
+  https://mastering-shiny.org/):
   Comprehensive Shiny textbook
 - [Palmer Penguins Dataset](
-  https://allisonhorst.github.io/palmerpenguins/) --
+  https://allisonhorst.github.io/palmerpenguins/):
   Dataset documentation and examples
 - [bslib Package](
-  https://rstudio.github.io/bslib/) --
+  https://rstudio.github.io/bslib/):
   Bootstrap theming for Shiny
 - [Shiny Gallery](
-  https://shiny.posit.co/r/gallery/) --
+  https://shiny.posit.co/r/gallery/):
   Examples of production Shiny applications
 
 # Reproducibility
@@ -747,9 +747,9 @@ Rscript -e "shiny::runApp('app.R', port=3838)"
 
 ```
 simpleshinyappwithchatgpt/
-  analysis/report/index.qmd  -- This post
-  app.R                       -- Complete app
-  analysis/media/images/      -- Hero, ambiance
+  analysis/report/index.qmd  (this post)
+  app.R                       (complete app)
+  analysis/media/images/      (hero, ambiance)
 ```
 
 ```{r}
@@ -770,14 +770,12 @@ sessionInfo()
 - **Email:**
   [rgtlab.org/contact](https://rgtlab.org/contact)
 
-I would enjoy hearing from you if:
+I would enjoy hearing from readers who:
 
-- You spot an error or a better approach to any of
+- Spot an error or a better approach to any of
   the code in this post.
-- You have suggestions for topics you would like to
-  see covered.
-- You want to discuss R programming, data science,
+- Have suggestions for topics to cover.
+- Want to discuss R programming, data science,
   or reproducible research.
-- You have questions about anything in this
-  tutorial.
-- You just want to say hello and connect.
+- Have questions about anything in this tutorial.
+- Simply want to say hello and connect.
