@@ -787,6 +787,6 @@ I would enjoy hearing from readers who:
 This post is part of the *Shiny and Interactive Visualization* series.
 Recommended reading order:
 
-1. Post 90: [Combining Observable JS and Shiny in a Quarto Document](../90-shinyvsobservable/)
+1. Post 90: [Combining Observable JS and Shiny in a Quarto Document](../90-shy-shiny-with-observable/)
 2. **Post 91: Prototyping a Shiny App with ChatGPT** (this post)
 
