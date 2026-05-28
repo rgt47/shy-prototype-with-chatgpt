@@ -19,6 +19,8 @@ format:
   html:
     code-fold: false
     code-tools: false
+cluster: shiny
+cluster-order: 2
 ---
 
 ![A developer workspace with an AI chat interface
@@ -779,3 +781,12 @@ I would enjoy hearing from readers who:
   or reproducible research.
 - Have questions about anything in this tutorial.
 - Simply want to say hello and connect.
+
+## Related posts in this cluster
+
+This post is part of the *Shiny and Interactive Visualization* series.
+Recommended reading order:
+
+1. Post 90: [Combining Observable JS and Shiny in a Quarto Document](../90-shinyvsobservable/)
+2. **Post 91: Prototyping a Shiny App with ChatGPT** (this post)
+
