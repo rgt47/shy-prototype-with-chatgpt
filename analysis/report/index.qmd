@@ -8,7 +8,7 @@ description: >
   be as a prototyping partner until I iteratively
   built a modular Shiny app for Palmer Penguin
   exploration in three prompts.
-image: "media/images/hero.jpg"
+image: "media/images/hero.png"
 document-type: "blog"
 draft: false
 execute:
@@ -25,7 +25,7 @@ cluster-order: 2
 
 ![A developer workspace with an AI chat interface
 beside a code editor showing Shiny
-code](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
+code](media/images/hero.png){.img-fluid width=80% fig-align="center"}
 
 *Iterative prototyping with conversational AI
 produces working Shiny applications faster than
