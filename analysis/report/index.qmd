@@ -10,7 +10,7 @@ description: >
   exploration in three prompts.
 image: "media/images/hero.png"
 document-type: "blog"
-draft: false
+draft: true
 execute:
   echo: true
   warning: false
@@ -213,7 +213,7 @@ R -e "shiny::runApp('app.R', launch.browser=T)"
 
 ![A screen showing a running Shiny application
 with interactive plots and
-controls](media/images/ambiance2.jpg){.img-fluid}
+controls](media/images/ambiance2.png){.img-fluid}
 
 *The complete application after three iterative
 prompts.*
@@ -573,7 +573,7 @@ without custom CSS.
 
 ![A pair programming session with notes and
 reference documentation
-visible](media/images/ambiance3.jpg){.img-fluid}
+visible](media/images/ambiance3.png){.img-fluid}
 
 *AI-assisted prototyping works best when the human
 provides architectural judgment and the AI provides
