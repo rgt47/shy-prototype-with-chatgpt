@@ -1,6 +1,6 @@
 ---
 title: "Prototyping a Shiny App with ChatGPT"
-author: "Ronald 'Ryy' G. Thomas"
+author: "Ronald G. Thomas"
 date: "2025-05-15"
 categories: [r, shiny]
 description: >
