@@ -3,11 +3,7 @@ title: "Prototyping a Shiny App with ChatGPT"
 author: "Ronald G. Thomas"
 date: "2025-05-15"
 categories: [r, shiny]
-description: >
-  I did not really know how effective ChatGPT could
-  be as a prototyping partner until I iteratively
-  built a modular Shiny app for Palmer Penguin
-  exploration in three prompts.
+description: "I did not really know how effective ChatGPT could be as a prototyping partner until I iteratively built a modular Shiny app for Palmer Penguin exploration in three prompts."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: true
@@ -15,6 +11,8 @@ execute:
   echo: true
   warning: false
   message: false
+format:
+  pdf: false
 cluster: shiny
 cluster-order: 2
 ---
@@ -209,7 +207,7 @@ R -e "shiny::runApp('app.R', launch.browser=T)"
 
 ![A screen showing a running Shiny application
 with interactive plots and
-controls](media/images/ambiance2.png){.img-fluid}
+controls](media/images/ambiance2.png){.img-fluid height=3.5in}
 
 *The complete application after three iterative
 prompts.*
@@ -569,7 +567,7 @@ without custom CSS.
 
 ![A pair programming session with notes and
 reference documentation
-visible](media/images/ambiance3.png){.img-fluid}
+visible](media/images/ambiance3.png){.img-fluid height=3.5in}
 
 *AI-assisted prototyping works best when the human
 provides architectural judgment and the AI provides
