@@ -11,8 +11,6 @@ execute:
   echo: true
   warning: false
   message: false
-format:
-  pdf: false
 cluster: shiny
 cluster-order: 2
 ---
