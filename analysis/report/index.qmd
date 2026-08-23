@@ -702,7 +702,7 @@ expertise.
 **Related posts:**
 
 - [Combining Observable JS and Shiny](
-  ../34-shinyvsobservable/):
+  ../shy-shiny-with-observable/):
   Mixing client-side and server-side reactivity
   in Quarto
 
