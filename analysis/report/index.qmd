@@ -15,9 +15,7 @@ cluster: shiny
 cluster-order: 2
 ---
 
-![A developer workspace with an AI chat interface
-beside a code editor showing Shiny
-code](media/images/hero.png){.img-fluid width=80% fig-align="center"}
+![A napkin sketch of a simple app layout, a pen resting on top, beside a closed laptop: a rough idea sketched out before being built.](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
 
 *Iterative prototyping with conversational AI
 produces working Shiny applications faster than
@@ -203,9 +201,9 @@ Or from the shell:
 R -e "shiny::runApp('app.R', launch.browser=T)"
 ```
 
-![A screen showing a running Shiny application
-with interactive plots and
-controls](media/images/ambiance2.png){.img-fluid height=3.5in}
+![A speech-bubble-shaped paper cutout pinned above a
+sketch of an app screen on a corkboard: a conversational
+interface shaping a design](media/images/ambiance2.jpg){.img-fluid height=3.5in}
 
 *The complete application after three iterative
 prompts.*
