@@ -6,7 +6,7 @@ categories: [r, shiny]
 description: "I did not really know how effective ChatGPT could be as a prototyping partner until I iteratively built a modular Shiny app for Palmer Penguin exploration in three prompts."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
