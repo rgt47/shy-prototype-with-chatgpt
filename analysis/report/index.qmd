@@ -3,7 +3,7 @@ title: "Prototyping a Shiny App with ChatGPT"
 author: "Ronald G. Thomas"
 date: "2025-05-15"
 categories: [r, shiny]
-description: "I did not really know how effective ChatGPT could be as a prototyping partner until I iteratively built a modular Shiny app for Palmer Penguin exploration in three prompts."
+description: "ChatGPT is an effective prototyping partner: three prompts of iterative work produced a modular Shiny app for Palmer Penguin exploration."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: false
@@ -23,11 +23,11 @@ coding from scratch.*
 
 # Introduction
 
-I did not really know how effective ChatGPT could
-be as a prototyping partner until I sat down with a
-clear goal (build a modular Shiny app for Palmer
-Penguin data exploration) and tried to get there
-through iterative prompting. Three prompts and
+ChatGPT is a more effective prototyping partner than
+I expected. I sat down with a clear goal (build a
+modular Shiny app for Palmer Penguin data
+exploration) and tried to get there through
+iterative prompting. Three prompts and
 roughly twenty minutes later, I had a working
 application with boxplots, scatterplots, a
 correlation matrix, tooltips, and a modular
